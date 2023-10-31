@@ -4,8 +4,6 @@ import { Transporter } from 'nodemailer';
 
 dotenv.config();
 
-console.log(process.env.EMAIL_PASS);
-
 const sender: Transporter = nodemailer.createTransport({
   host: process.env.EMAIL_HOST as string,
   port: Number(process.env.EMAIL_PORT),
