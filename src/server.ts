@@ -11,7 +11,6 @@ server.use(express.json());
 
 server.use(router);
 
-// Move o middleware de erro para o final do middleware stack
 server.use(errorHandling);
 
 export default server;

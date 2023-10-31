@@ -7,7 +7,7 @@ const fetchTo = async (returnTo: string, status: string, id: string) => {
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ status }),
+    body: JSON.stringify({ status, id }),
   });
 };
 
