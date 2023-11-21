@@ -15,11 +15,11 @@ const emailSchema: joi.Schema<EmailDto> = joi.object({
     'string.empty': 'O campo content não pode estar vazio.',
   }),
   id: joi.string().required().messages({
-    'any.required': 'O campo content é obrigatório.',
-    'string.empty': 'O campo content não pode estar vazio.',
+    'any.required': 'O campo id é obrigatório.',
+    'string.empty': 'O campo id não pode estar vazio.',
   }),
   returnTo: joi.string().optional().messages({
-    'string.empty': 'O campo content não pode estar vazio.',
+    'string.empty': 'O campo returnTo não pode estar vazio.',
   }),
 });
 
