@@ -30,7 +30,7 @@ const EmailService = async ({
         if (returnTo) {
           await fetchTo(returnTo, 'Recebido', id);
         }
-        console.log('E-mail enviado e recebido com sucesso!');
+        console.log('Email recebido com sucesso!');
       } else {
         if (returnTo) {
           await fetchTo(returnTo, 'Enviado', id);
@@ -40,7 +40,7 @@ const EmailService = async ({
     })
     .catch(async () => {
       if (returnTo) await fetchTo(returnTo, 'Não enviado', id);
-      else console.log('Email não foi enviado.');
+      else console.log('O Email não foi enviado.');
     });
 };
 
