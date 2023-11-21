@@ -14,7 +14,7 @@ const validationSchema =
 
     if (errors.length > 0) {
       return res.status(400).json({
-        mensage: errors,
+        message: errors,
       });
     }
     return next();
